@@ -58,15 +58,6 @@ $hotels = [
     <h3>Lista Hotels:</h3>
 
     <?php
-    // $i = 0;
-    // while ($i < count($hotels)) {
-    //     $this_hotel = $hotels[$i];
-    //     $i++;
-    //     var_dump($this_hotel["name"]);
-    //     echo "<li><h3>" . $this_hotel["name"];
-    //     "</h3></li>";
-    // }
-
     for ($i = 0; $i < count($hotels); $i++) {
         $this_hotel = $hotels[$i];
         echo "<ul>
@@ -94,15 +85,12 @@ $hotels = [
             </tr>
         </thead>
         <!-- Per ogni hotel stampa tutti i suoi valori -->
-
         <tbody>
-            <!-- <tr> -->
             <?php
             for ($i = 0; $i < count($hotels); $i++) {
                 $this_hotel = $hotels[$i];
             ?>
                 <tr>
-
                 <?php
                 // Stampo i valori degli hotel
                 foreach ($this_hotel as $key => $value) {
@@ -111,7 +99,6 @@ $hotels = [
             }
                 ?>
                 </tr>
-
         </tbody>
     </table>
 
